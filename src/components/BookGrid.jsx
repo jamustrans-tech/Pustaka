@@ -102,7 +102,11 @@ export default function BookGrid() {
 
                     <a 
                       href={`https://wa.me/6285800372731?text=${encodeURIComponent(
-                        `Halo Admin, saya ingin memesan produk FLASH SALE:\n\n*Judul:* ${book.title}\n*Harga Promo:* ${book.price}\n\nMohon informasi selanjutnya.`
+                        `${window.location.href}\n\n` + 
+                        `Halo Admin, saya ingin memesan produk FLASH SALE:\n\n` +
+                        `*Judul:* ${book.title}\n` +
+                        `*Harga Promo:* ${book.price}\n\n` +
+                        `Mohon informasi selanjutnya.`
                       )}`}
                       target="_blank"
                       rel="noopener noreferrer"
